@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/henry40408/concourse-ssh-resource/internal/models"
 	"github.com/spf13/afero"
+	"stash.tools.deloitteinnovation.us/projects/CRE/repos/concourse-ssh-resource/internal/models"
 )
 
 // ReplacePlaceholders replaces placeholders in Script with Placeholders

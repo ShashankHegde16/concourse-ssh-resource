@@ -1,11 +1,11 @@
 # build stage
 
-FROM golang:alpine as builder
+FROM golang:1.8.1-alpine as builder
 
-COPY . /go/src/github.com/henry40408/concourse-ssh-resource
+COPY . /go/src/stash.tools.deloitteinnovation.us/projects/CRE/repos/concourse-ssh-resource
 
 RUN apk --no-cache add make && \
-  cd /go/src/github.com/henry40408/concourse-ssh-resource && \
+  cd /go/src/stash.tools.deloitteinnovation.us/projects/CRE/repos/concourse-ssh-resource && \
   make build-linux
 
 WORKDIR /opt/resource

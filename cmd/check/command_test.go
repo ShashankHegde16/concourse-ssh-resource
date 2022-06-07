@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/henry40408/concourse-ssh-resource/internal/models"
+	"stash.tools.deloitteinnovation.us/projects/CRE/repos/concourse-ssh-resource/internal/models"
 )
 
 func TestCheckCommand(t *testing.T) {
