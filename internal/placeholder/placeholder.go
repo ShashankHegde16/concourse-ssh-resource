@@ -63,9 +63,10 @@ func readLineFromFile(fs afero.Fs, filepath string) (string, error) {
 
 	scanner := bufio.NewScanner(file)
 	scanner.Split(bufio.ScanLines)
-	scanner.Scan()
-
-	// scan only the first line, discards the rest
-	content := scanner.Text()
-	return content, nil
+	var contents []string
+	// Read all lines of file
+	for scanner.Scan() {
+		contents = append(contents, scanner.Text())
+	}
+	return strings.Join(contents, "\n"), nil
 }
