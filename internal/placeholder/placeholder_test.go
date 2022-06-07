@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/assert"
 
-	"stash.tools.deloitteinnovation.us/projects/CRE/repos/concourse-ssh-resource/internal/models"
+	"concourse-ssh-resource/internal/models"
 )
 
 const (

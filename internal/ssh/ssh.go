@@ -13,8 +13,8 @@ import (
 	"github.com/reconquest/hierr-go"
 	"github.com/spf13/afero"
 
-	"stash.tools.deloitteinnovation.us/projects/CRE/repos/concourse-ssh-resource/internal/models"
-	"stash.tools.deloitteinnovation.us/projects/CRE/repos/concourse-ssh-resource/internal/placeholder"
+	"concourse-ssh-resource/internal/models"
+	"concourse-ssh-resource/internal/placeholder"
 )
 
 const defaultTimeout = 60 * 10 // = 10 minutes

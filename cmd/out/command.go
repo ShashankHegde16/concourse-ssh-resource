@@ -6,11 +6,12 @@ import (
 	"io"
 	"time"
 
+	"concourse-ssh-resource/internal/models"
+
 	"github.com/reconquest/hierr-go"
 	"github.com/spf13/afero"
-	"stash.tools.deloitteinnovation.us/projects/CRE/repos/concourse-ssh-resource/internal/models"
 
-	"stash.tools.deloitteinnovation.us/projects/CRE/repos/concourse-ssh-resource/internal/ssh"
+	"concourse-ssh-resource/internal/ssh"
 )
 
 type outRequest struct {

@@ -1,0 +1,3 @@
+pipeline:
+  lifecycle:
+    is_release: true

@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ShashankHegde16/concourse-ssh-resource/internal/models"
+	"concourse-ssh-resource/internal/models"
 )
 
 type inResponse struct {

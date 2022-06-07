@@ -1,0 +1,4 @@
+# This is where you might want to override a feature/bugix branch only setting
+# such as common-ci-branch or common-ci-tag
+# common-ci-branch: ""
+# common-ci-tag: ""

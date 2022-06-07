@@ -1,6 +1,8 @@
 # Concourse SSH Resource
 > SSH resource for Concourse CI
 
+This has been forked from [concourse-ssh-resource](https://github.com/henry40408/concourse-ssh-resource)
+
 ## Source Configuration
 
 * `host`: host name of remote machine

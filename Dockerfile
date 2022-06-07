@@ -1,17 +1,17 @@
 # build stage
 
-FROM golang:1.8.1-alpine as builder
+FROM dcil-docker-release.art.tools.deloitteinnovation.us/golang:1.8.1-alpine as builder
 
-COPY . /go/src/stash.tools.deloitteinnovation.us/projects/CRE/repos/concourse-ssh-resource
+COPY . /go/src/concourse-ssh-resource
 
 RUN apk --no-cache add make=4.2.1-r0 && \
-  cd /go/src/stash.tools.deloitteinnovation.us/projects/CRE/repos/concourse-ssh-resource && \
+  cd /go/src/concourse-ssh-resource && \
   make build-linux
 
 WORKDIR /opt/resource
 
 # release stage
 
-FROM alpine:edge
+FROM dcil-docker-release.art.tools.deloitteinnovation.us/alpine:edge
 
 COPY --from=builder /opt/resource /opt/resource
