@@ -1,4 +1,3 @@
----
 # The parent pipeline configuration file from which to create the pipeline
 pipeline-config: pipelines/ilab-docker.mako
 
@@ -10,9 +9,9 @@ test_automation:
 
 # Docker Parameters
 docker:
-   # The target location for the published docker image
-   image-name: cre/concourse-ssh-resource
-   repository: ((docker.url-scratch))/((docker.image-name))
-   secrets:
-      username: ((svc-concourse-user))
-      password: ((svc-concourse-password))
+  # The target location for the published docker image
+  image-name: cre/concourse-ssh-resource
+  repository: ((docker.url-scratch))/((docker.image-name))
+  secrets:
+    username: ((svc-concourse-user))
+    password: ((svc-concourse-password))
